@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>@Html.ActionLink("Home", "HomeMenu", "Home")</li>
+            <li>@Html.ActionLink("Backgrounds", "BackgroundTemplate", "Cards")</li>
+            <li>@Html.ActionLink("Fonts", "FontTemplate", "Cards")</li>
+            <li>@Html.ActionLink("Images", "ImageView", "Cards")</li>
+            <li>@Html.ActionLink("Your Message", "Message", "Cards")</li>
+        </ul>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <nav>        
+        <ul>
+            <li>@Html.ActionLink("Home", "HomeMenu", "Home")</li>
+            <li>@Html.ActionLink("New Card", "NewCard", "Cards")</li>
+            <li>@Html.ActionLink("My Saved Cards", "SavedCards", "Cards")</li>
+            <li>@Html.ActionLink("Calendar", "Calendar", "Extra")</li>
+            <li>@Html.ActionLink("Funny Card of the Day", "CardOfTheDay", "Extra")</li>
+        </ul>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

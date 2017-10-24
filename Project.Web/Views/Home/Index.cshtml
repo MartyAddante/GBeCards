@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h2>
+            Please Log In
+        </h2>
+
+        <form action="@Url.Action("LogIn","Home")" method="get">
+            <button>Log In</button>
+        </form>
+        @*<form action="@Url.Action("HomeMenu","Home")" method="get">*@
+            @* This will need to be changed to a log in with username and password *@
+            @*<button>Log In</button>*@
+        @*</form>*@
+        <form action="@Url.Action("NewUser", "Home")">
+            <button>New User</button>
+        </form>
+    </div>
+</body>
+</html>

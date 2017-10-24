@@ -1,0 +1,11 @@
+﻿@using Project.Web.Models;
+@model HomeModel
+
+@{
+    ViewBag.Title = "HomeMenu";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+
+<h2>Welcome to Your E-Cards Home!</h2>
+<h3>@Model.Today()</h3>
